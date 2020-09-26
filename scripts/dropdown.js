@@ -1,9 +1,14 @@
-const printArea = document.querySelector("#content")
+let btn = document.querySelector(".button");
 
-const dropdownArea = () => {
-    
-
+function firstFunction(e, name) {
+    btn.innerHTML = name
 }
- 
- 
- console.log("Hola it is working");
+
+
+
+btn.addEventListener("click", function(e) {
+    firstFunction(e, "Auburn")
+});
+btn.addEventListener("click", function() {
+    btn.style.backgroundColor ="aqua"; 
+});
