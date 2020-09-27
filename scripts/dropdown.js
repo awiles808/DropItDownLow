@@ -6,9 +6,13 @@ function firstFunction(e, name) {
 
 
 
-btn.addEventListener("click", function(e) {
+btn.addEventListener("click",  function(e) {
     firstFunction(e, "Auburn")
 });
-btn.addEventListener("click", function() {
+btn.addEventListener("mouseover", function() {
     btn.style.backgroundColor ="aqua"; 
-});
+    setTimeout(function() {
+        btn.style.backgroundColor ="tomato";
+    }, 5000);
+}, false);
+
